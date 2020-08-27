@@ -1,5 +1,136 @@
+<!--
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="<?= base_url();?>assets/img/hero-bg.webp" alt="hero-img" />
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>Master Talikuat<span>.</span></h1>
+              <h2>Manajemen infrastruktur daerah jawa barat</h2>
+            </div>
+          </div>
 
+          <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="owl-carousel box-slider">
+              <div class="item icon-box">
+                <i class="ri-store-line"></i>
+                <h3 ><a href="<?= base_url();?>profil/sejarah" style="color : #88CECB">Sejarah</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-bar-chart-box-line"></i>
+              <h3 ><a href="<?= base_url();?>profil/visimisi" style="color : #88CECB">Visi dan Misi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-calendar-todo-line"></i>
+                <h3><a href="<?= base_url();?>profil/strukturorganisasi" style="color : #88CECB">Struktur Organisasi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-paint-brush-line"></i>
+                <h3><a href="<?= base_url();?>profil/tugasfungsi" style="color : #88CECB">Tugas dan Fungsi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-database-2-line"></i>
+                <h3><a href="<?= base_url();?>organisasi/uptd" style="color : #88CECB">UPTD</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url();?>assets/img/testimonials-bg.webp" alt="hero-img" />
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>Project Tracker<span>.</span></h1>
+              <h2>Lacak proses pembagunan yang sedang berjalan</h2>
+            </div>
+          </div>
 
+          <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="owl-carousel box-slider">
+              <div class="item icon-box">
+                <i class="ri-store-line"></i>
+                <h3 ><a href="<?= base_url();?>profil/sejarah" style="color : #88CECB">Sejarah</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-bar-chart-box-line"></i>
+              <h3 ><a href="<?= base_url();?>profil/visimisi" style="color : #88CECB">Visi dan Misi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-calendar-todo-line"></i>
+                <h3><a href="<?= base_url();?>profil/strukturorganisasi" style="color : #88CECB">Struktur Organisasi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-paint-brush-line"></i>
+                <h3><a href="<?= base_url();?>profil/tugasfungsi" style="color : #88CECB">Tugas dan Fungsi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-database-2-line"></i>
+                <h3><a href="<?= base_url();?>organisasi/uptd" style="color : #88CECB">UPTD</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url();?>assets/img/about.webp" alt="hero-img" />
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>Minitoring<span>.</span></h1>
+              <h2>Pantau dan lihat hasil pembangunan</h2>
+            </div>
+          </div>
+
+          <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="owl-carousel box-slider">
+              <div class="item icon-box">
+                <i class="ri-store-line"></i>
+                <h3 ><a href="<?= base_url();?>profil/sejarah" style="color : #88CECB">Sejarah</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-bar-chart-box-line"></i>
+              <h3 ><a href="<?= base_url();?>profil/visimisi" style="color : #88CECB">Visi dan Misi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-calendar-todo-line"></i>
+                <h3><a href="<?= base_url();?>profil/strukturorganisasi" style="color : #88CECB">Struktur Organisasi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-paint-brush-line"></i>
+                <h3><a href="<?= base_url();?>profil/tugasfungsi" style="color : #88CECB">Tugas dan Fungsi</a></h3>
+              </div>
+              <div class="item icon-box">
+                <i class="ri-database-2-line"></i>
+                <h3><a href="<?= base_url();?>organisasi/uptd" style="color : #88CECB">UPTD</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+-->
 
 
 <section id="hero" class="d-flex align-items-center justify-content-center">
