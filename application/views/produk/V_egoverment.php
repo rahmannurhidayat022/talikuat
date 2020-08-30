@@ -1,9 +1,8 @@
-
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-10 col-lg-8">
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+    <div class="text-center">
+      <br>
+      <br>
           <h1 style="color : #E8C127">E-Goverment Kementrian</h1>
         </div>
       </div>

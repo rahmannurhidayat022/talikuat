@@ -165,6 +165,26 @@
     return false;
   });
 
+  // Back to down button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() < 2500) {
+      $(".back-to-down").fadeIn("slow");
+    } else {
+      $(".back-to-down").fadeOut("slow");
+    }
+  });
+
+  $(".back-to-down").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 9999,
+      },
+      1500,
+      "easeInOutExpo"
+    );
+    return false;
+  });
+
   //hero carousel
   $(document).ready(() => {
     $(".box-slider").owlCarousel({
@@ -252,3 +272,53 @@
     aos_init();
   });
 })(jQuery);
+
+// JS bagian layar chatting
+
+document.addEventListener("DOMContentLoaded", () => {
+  //tampilkan pesan yang diketikan
+
+  document.querySelector(".send-message").addEventListener("click", async () => {
+    let chatValue = await document.querySelector(".inputan").value;
+
+    const replaceChat = await document.querySelector(".chat-body");
+    if (chatValue) {
+      replaceChat.innerHTML += `
+             <div class="guest">
+                <div class="text-guest pt-3 px-2 mr-2">
+                     <p>${chatValue}</p>
+                </div>
+                <div class="pp-guest">
+                     <img src="assets/img/chat/admin.jpg" alt="admin pp" />
+                </div>
+           </div>
+           `;
+    }
+
+    $(".inputan").val("");
+  });
+});
+
+//ketika btnChat di klik,akan menampilakan layar chatting
+
+$(document).ready(function () {
+  $("#icon-chat").click(function () {
+    $("#chat").toggle();
+    $("#icon-chat").css({
+      "z-index": "-1",
+      opacity: "0",
+    });
+  });
+
+  //close layar chatting
+
+  $(".close").ready(function () {
+    $(".close").click(function () {
+      $("#chat").css("display", "none");
+      $("#icon-chat").css({
+        "z-index": "99",
+        opacity: "1",
+      });
+    });
+  });
+});

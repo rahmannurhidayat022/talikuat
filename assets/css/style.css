@@ -67,6 +67,32 @@ h6 {
   color: white;
 }
 
+.back-to-down {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-down i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--primary-color-dbmpr);
+  color: #151515;
+  transition: all 0.4s;
+}
+
+.back-to-down i:hover {
+  background: var(--alternatif-color);
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1647,4 +1673,133 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/* CSS bagian layar chatting */
+
+#chat {
+  display: none;
+  position: fixed;
+  width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  right: 2%;
+  bottom: 10%;
+  background: #eee;
+  transition: 3s;
+  z-index: 9999;
+}
+
+#chat .chat-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  background: #e8c127;
+}
+
+#chat .chat-header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#chat .chat-body .operator {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+
+#chat .chat-body .operator .text-admin {
+  background: #eee;
+  border-radius: 15px;
+  text-overflow: ellipsis;
+}
+
+#chat .chat-body .operator img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#chat .chat-body .guest {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+#chat .chat-body .guest .text-guest {
+  background: #eee;
+  border-radius: 15px;
+}
+
+#chat .chat-body .guest img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 4px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#chat .chat-header h4 {
+  font-weight: lighter;
+  padding: 2px 10px;
+}
+
+#chat .chat-body {
+  position: relative;
+  padding: 20px 20px;
+  width: 95%;
+  height: 250px;
+  margin: auto;
+  background: #fff;
+  overflow: auto;
+}
+
+#chat .chat-writer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#chat .close {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+#chat .close .material-icons {
+  font-size: 50px;
+  color: #e8c127;
+  opacity: 1;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#icon-chat {
+  display: block;
+  position: fixed;
+  right: 60px;
+  bottom: -4px;
+  height: 0;
+  z-index: 99;
+}
+
+#icon-chat .material-icons {
+  font-size: 27px;
+}
+
+button:active {
+  border: none;
+  outline: none;
 }

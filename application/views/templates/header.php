@@ -1,30 +1,59 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
+      <title>Master Talikuat</title>
+      <meta content="" name="descriptison" />
+      <meta content="" name="keywords" />
 
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+      <!-- Favicons -->
+      <link href="<?= base_url();?>/assets/img/favicon.png" rel="icon" />
+      <link href="<?= base_url();?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Favicons -->
-    <link href="<?= base_url();?>/assets/img/favicon.png" rel="icon">
-    <link href="<?= base_url();?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet"
+      />
+      <!-- news bootstrap 4.5 -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous"
+      />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      <!-- material icons -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <!-- Vendor CSS Files -->
-    <link href="<?= base_url();?>/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="<?= base_url();?>/assets/vendor/aos/aos.css" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="<?= base_url();?>/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>/assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>/assets/vendor/venobox/venobox.css" rel="stylesheet" />
+      <!-- animasi scrolling -->
+      <link href="<?= base_url();?>/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+      <!-- konfigurasi map -->
+      <link href="<?= base_url();?>/assets/vendor/aos/aos.css" rel="stylesheet" />
 
+      <!-- Template Main CSS File -->
+      <link href="<?= base_url();?>/assets/css/style.css" rel="stylesheet" />
+
+      <!-- =======================================================
+    * Template Name: Gp - v2.1.0
+    * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/ -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="<?= base_url(); ?>assets/js/javascript.js"></script>
+    <script src="<?= base_url(); ?>assets/js/popper.min.js"></script>
+    <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
     <!-- Vendor JS Files -->
     <script src="<?= base_url();?>/assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url();?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -40,37 +69,6 @@
     <!-- Template Main JS File -->
     <script src="<?= base_url();?>/assets/js/main.js"></script>
 
-    <script src="<?= base_url();?>/assets/js/jquery.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/popper.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/bootstrap.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery.easing.1.3.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery.waypoints.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery.stellar.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/owl.carousel.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/jquery.animateNumber.min.js"></script>
-    <script src="<?= base_url();?>/assets/js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="<?= base_url();?>/assets/js/google-map.js"></script>
-    <script src="<?= base_url();?>/assets/js/main0.js"></script>
-<!-- batas-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="<?= base_url();?>/assets/css/animate.css">
-
-    <link rel="stylesheet" href="<?= base_url();?>/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?= base_url();?>/assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?= base_url();?>/assets/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="<?= base_url();?>/assets/css/flaticon.css">
-
-
-    <!-- Template Main CSS File -->
-    <link href="<?= base_url();?>/assets/css/style.css" rel="stylesheet">
-    <!--link href="<?= base_url();?>/assets/css/style2.css" rel="stylesheet">-->
 
 
     <title><?= $judul; ?></title>
@@ -81,7 +79,7 @@
 
         <h1 class="logo">
           <img src="<?= base_url();?>/assets/img/favicon.png" alt="logo dbmpr" class="img-fluid" />
-          <a style="color: black" href="<?= base_url();?>">Talikuat<span>.</span></a>
+          <a style="color: white" href="<?= base_url();?>">Teman Jabar<span>.</span></a>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
