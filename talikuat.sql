@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Waktu pembuatan: 29 Agu 2020 pada 16.06
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.6
+-- Host: 127.0.0.1
+-- Generation Time: Aug 31, 2020 at 10:49 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_umum`
+-- Table structure for table `data_umum`
 --
 
 CREATE TABLE `data_umum` (
@@ -76,7 +76,7 @@ CREATE TABLE `data_umum` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `data_umum`
+-- Dumping data for table `data_umum`
 --
 
 INSERT INTO `data_umum` (`id`, `pemda`, `opd`, `unor`, `nama_kegiatan`, `nama_ruas_jalan`, `segmen_jalan`, `no_kontrak`, `tgl_kontrak`, `nilai_kontrak`, `no_spmk`, `tgl_spmk`, `panjang`, `waktu_pelaksanaan`, `ppk`, `penyedia_jasa`, `konsultan_supervisi`, `nama_ppk`, `nama_se`, `nama_gs`, `satuan_panjang`, `satuan_waktu`, `lat`, `lng`, `rab`, `rab1`, `rab2`, `rab3`, `pk`, `sk`, `sm`, `ul_spmk`, `ul_jadual`, `ul_rencana`, `ul_sppbj`, `ul_spl`, `ul_spek`, `ul_jaminan`, `ul_spkmp`, `wp`, `aksi`, `tgl_input`, `user`, `unit`, `tgl_update`) VALUES
@@ -107,7 +107,7 @@ INSERT INTO `data_umum` (`id`, `pemda`, `opd`, `unor`, `nama_kegiatan`, `nama_ru
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_umum_ruas`
+-- Table structure for table `data_umum_ruas`
 --
 
 CREATE TABLE `data_umum_ruas` (
@@ -121,7 +121,7 @@ CREATE TABLE `data_umum_ruas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `data_umum_ruas`
+-- Dumping data for table `data_umum_ruas`
 --
 
 INSERT INTO `data_umum_ruas` (`id`, `ruas_jalan`, `segmen_jalan`, `lat_awal`, `long_awal`, `lat_akhir`, `long_akhir`) VALUES
@@ -177,7 +177,7 @@ INSERT INTO `data_umum_ruas` (`id`, `ruas_jalan`, `segmen_jalan`, `lat_awal`, `l
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_jadual`
+-- Table structure for table `detail_jadual`
 --
 
 CREATE TABLE `detail_jadual` (
@@ -198,7 +198,7 @@ CREATE TABLE `detail_jadual` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_jadual`
+-- Dumping data for table `detail_jadual`
 --
 
 INSERT INTO `detail_jadual` (`id_jadual`, `id`, `kegiatan`, `tgl`, `nmp`, `uraian`, `satuan`, `harga_satuan`, `volume`, `jumlah_harga`, `bobot`, `koefisien`, `nilai`, `nilai_kontrak`) VALUES
@@ -282,7 +282,7 @@ INSERT INTO `detail_jadual` (`id_jadual`, `id`, `kegiatan`, `tgl`, `nmp`, `uraia
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_bahan`
+-- Table structure for table `detail_laporan_harian_bahan`
 --
 
 CREATE TABLE `detail_laporan_harian_bahan` (
@@ -293,7 +293,7 @@ CREATE TABLE `detail_laporan_harian_bahan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_bahan`
+-- Dumping data for table `detail_laporan_harian_bahan`
 --
 
 INSERT INTO `detail_laporan_harian_bahan` (`no_trans`, `bahan`, `volume`, `satuan`) VALUES
@@ -489,7 +489,7 @@ INSERT INTO `detail_laporan_harian_bahan` (`no_trans`, `bahan`, `volume`, `satua
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_beton`
+-- Table structure for table `detail_laporan_harian_beton`
 --
 
 CREATE TABLE `detail_laporan_harian_beton` (
@@ -504,7 +504,7 @@ CREATE TABLE `detail_laporan_harian_beton` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_beton`
+-- Dumping data for table `detail_laporan_harian_beton`
 --
 
 INSERT INTO `detail_laporan_harian_beton` (`no_trans`, `bahan_beton`, `no_tm`, `waktu_datang`, `waktu_curah`, `slump_test`, `satuan`, `ket`) VALUES
@@ -676,7 +676,7 @@ INSERT INTO `detail_laporan_harian_beton` (`no_trans`, `bahan_beton`, `no_tm`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_cuaca`
+-- Table structure for table `detail_laporan_harian_cuaca`
 --
 
 CREATE TABLE `detail_laporan_harian_cuaca` (
@@ -689,7 +689,7 @@ CREATE TABLE `detail_laporan_harian_cuaca` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_cuaca`
+-- Dumping data for table `detail_laporan_harian_cuaca`
 --
 
 INSERT INTO `detail_laporan_harian_cuaca` (`no_trans`, `cerah`, `hujan_ringan`, `hujan_lebat`, `bencana_alam`, `lain_lain`) VALUES
@@ -861,7 +861,7 @@ INSERT INTO `detail_laporan_harian_cuaca` (`no_trans`, `cerah`, `hujan_ringan`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_hotmix`
+-- Table structure for table `detail_laporan_harian_hotmix`
 --
 
 CREATE TABLE `detail_laporan_harian_hotmix` (
@@ -879,7 +879,7 @@ CREATE TABLE `detail_laporan_harian_hotmix` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_hotmix`
+-- Dumping data for table `detail_laporan_harian_hotmix`
 --
 
 INSERT INTO `detail_laporan_harian_hotmix` (`no_trans`, `bahan_hotmix`, `no_dt`, `waktu_datang`, `waktu_hampar`, `suhu_datang`, `suhu_hampar`, `pro_p`, `pro_i`, `pro_t`, `ket`) VALUES
@@ -1051,7 +1051,7 @@ INSERT INTO `detail_laporan_harian_hotmix` (`no_trans`, `bahan_hotmix`, `no_dt`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_intruksi`
+-- Table structure for table `detail_laporan_harian_intruksi`
 --
 
 CREATE TABLE `detail_laporan_harian_intruksi` (
@@ -1063,7 +1063,7 @@ CREATE TABLE `detail_laporan_harian_intruksi` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_pekerjaan`
+-- Table structure for table `detail_laporan_harian_pekerjaan`
 --
 
 CREATE TABLE `detail_laporan_harian_pekerjaan` (
@@ -1081,7 +1081,7 @@ CREATE TABLE `detail_laporan_harian_pekerjaan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_pekerjaan`
+-- Dumping data for table `detail_laporan_harian_pekerjaan`
 --
 
 INSERT INTO `detail_laporan_harian_pekerjaan` (`no_trans`, `id_kegiatan`, `no_pekerjaan`, `jenis_pekerjaan`, `sta_awal`, `sta_akhir`, `ki_ka`, `volume`, `satuan`, `ket`, `tgl`) VALUES
@@ -1255,7 +1255,7 @@ INSERT INTO `detail_laporan_harian_pekerjaan` (`no_trans`, `id_kegiatan`, `no_pe
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_peralatan`
+-- Table structure for table `detail_laporan_harian_peralatan`
 --
 
 CREATE TABLE `detail_laporan_harian_peralatan` (
@@ -1266,7 +1266,7 @@ CREATE TABLE `detail_laporan_harian_peralatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_peralatan`
+-- Dumping data for table `detail_laporan_harian_peralatan`
 --
 
 INSERT INTO `detail_laporan_harian_peralatan` (`no_trans`, `jenis_peralatan`, `jumlah`, `satuan`) VALUES
@@ -1472,7 +1472,7 @@ INSERT INTO `detail_laporan_harian_peralatan` (`no_trans`, `jenis_peralatan`, `j
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_laporan_harian_tkerja`
+-- Table structure for table `detail_laporan_harian_tkerja`
 --
 
 CREATE TABLE `detail_laporan_harian_tkerja` (
@@ -1482,7 +1482,7 @@ CREATE TABLE `detail_laporan_harian_tkerja` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_laporan_harian_tkerja`
+-- Dumping data for table `detail_laporan_harian_tkerja`
 --
 
 INSERT INTO `detail_laporan_harian_tkerja` (`no_trans`, `tenaga_kerja`, `jumlah`) VALUES
@@ -1750,7 +1750,7 @@ INSERT INTO `detail_laporan_harian_tkerja` (`no_trans`, `tenaga_kerja`, `jumlah`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_request_bahan`
+-- Table structure for table `detail_request_bahan`
 --
 
 CREATE TABLE `detail_request_bahan` (
@@ -1761,7 +1761,7 @@ CREATE TABLE `detail_request_bahan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_request_bahan`
+-- Dumping data for table `detail_request_bahan`
 --
 
 INSERT INTO `detail_request_bahan` (`id`, `bahan`, `volume`, `satuan`) VALUES
@@ -1791,7 +1791,7 @@ INSERT INTO `detail_request_bahan` (`id`, `bahan`, `volume`, `satuan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_request_peralatan`
+-- Table structure for table `detail_request_peralatan`
 --
 
 CREATE TABLE `detail_request_peralatan` (
@@ -1802,7 +1802,7 @@ CREATE TABLE `detail_request_peralatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_request_peralatan`
+-- Dumping data for table `detail_request_peralatan`
 --
 
 INSERT INTO `detail_request_peralatan` (`id`, `jenis_peralatan`, `jumlah`, `satuan`) VALUES
@@ -1832,7 +1832,7 @@ INSERT INTO `detail_request_peralatan` (`id`, `jenis_peralatan`, `jumlah`, `satu
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `detail_request_tkerja`
+-- Table structure for table `detail_request_tkerja`
 --
 
 CREATE TABLE `detail_request_tkerja` (
@@ -1842,7 +1842,7 @@ CREATE TABLE `detail_request_tkerja` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `detail_request_tkerja`
+-- Dumping data for table `detail_request_tkerja`
 --
 
 INSERT INTO `detail_request_tkerja` (`id`, `tenaga_kerja`, `jumlah`) VALUES
@@ -1874,7 +1874,7 @@ INSERT INTO `detail_request_tkerja` (`id`, `tenaga_kerja`, `jumlah`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `groups`
+-- Table structure for table `groups`
 --
 
 CREATE TABLE `groups` (
@@ -1884,7 +1884,7 @@ CREATE TABLE `groups` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `groups`
+-- Dumping data for table `groups`
 --
 
 INSERT INTO `groups` (`id`, `name`, `description`) VALUES
@@ -1898,7 +1898,7 @@ INSERT INTO `groups` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jadual`
+-- Table structure for table `jadual`
 --
 
 CREATE TABLE `jadual` (
@@ -1927,7 +1927,7 @@ CREATE TABLE `jadual` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `jadual`
+-- Dumping data for table `jadual`
 --
 
 INSERT INTO `jadual` (`id`, `id_data_umum`, `nmp`, `jenis_pekerjaan`, `user`, `unor`, `kegiatan`, `ruas_jalan`, `waktu_pelaksanaan`, `panjang`, `ppk`, `nama_ppk`, `nama_penyedia`, `konsultan`, `tgl_input`, `tgl_update`, `harga_satuan`, `volume`, `satuan`, `nilai_kontrak`, `jumlah_harga`, `bobot`) VALUES
@@ -1966,7 +1966,7 @@ INSERT INTO `jadual` (`id`, `id_data_umum`, `nmp`, `jenis_pekerjaan`, `user`, `u
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kantor`
+-- Table structure for table `kantor`
 --
 
 CREATE TABLE `kantor` (
@@ -1980,7 +1980,7 @@ CREATE TABLE `kantor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `kantor`
+-- Dumping data for table `kantor`
 --
 
 INSERT INTO `kantor` (`id_kantor`, `nama_kantor`, `nama_lengkap`, `alamat_kantor`, `telp`, `email`, `user`) VALUES
@@ -1996,7 +1996,48 @@ INSERT INTO `kantor` (`id_kantor`, `nama_kantor`, `nama_lengkap`, `alamat_kantor
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `login_attempts`
+-- Table structure for table `landing_menu`
+--
+
+CREATE TABLE `landing_menu` (
+  `id` int(11) NOT NULL,
+  `menu` varchar(50) NOT NULL,
+  `tgl_input` varchar(100) NOT NULL,
+  `tgl_update` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `landing_menu`
+--
+
+INSERT INTO `landing_menu` (`id`, `menu`, `tgl_input`, `tgl_update`) VALUES
+(1, 'Profil', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `landing_section1`
+--
+
+CREATE TABLE `landing_section1` (
+  `id` int(11) DEFAULT NULL,
+  `judul` varchar(50) NOT NULL,
+  `deskripsi` varchar(255) NOT NULL,
+  `tgl_input` varchar(100) NOT NULL,
+  `tgl_update` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `landing_section1`
+--
+
+INSERT INTO `landing_section1` (`id`, `judul`, `deskripsi`, `tgl_input`, `tgl_update`) VALUES
+(NULL, 'Berita', 'test', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login_attempts`
 --
 
 CREATE TABLE `login_attempts` (
@@ -2007,16 +2048,16 @@ CREATE TABLE `login_attempts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `login_attempts`
+-- Dumping data for table `login_attempts`
 --
 
 INSERT INTO `login_attempts` (`id`, `ip_address`, `login`, `time`) VALUES
-(7, '::1', 'adda@com.com', 1598709739);
+(8, '::1', 'admin', 1598790857);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_bahan`
+-- Table structure for table `master_bahan`
 --
 
 CREATE TABLE `master_bahan` (
@@ -2028,7 +2069,7 @@ CREATE TABLE `master_bahan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_bahan`
+-- Dumping data for table `master_bahan`
 --
 
 INSERT INTO `master_bahan` (`id`, `nama_bahan`, `satuan`, `tgl_input`, `tgl_update`) VALUES
@@ -2037,7 +2078,7 @@ INSERT INTO `master_bahan` (`id`, `nama_bahan`, `satuan`, `tgl_input`, `tgl_upda
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_jenis_pekerjaan`
+-- Table structure for table `master_jenis_pekerjaan`
 --
 
 CREATE TABLE `master_jenis_pekerjaan` (
@@ -2049,7 +2090,7 @@ CREATE TABLE `master_jenis_pekerjaan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_jenis_pekerjaan`
+-- Dumping data for table `master_jenis_pekerjaan`
 --
 
 INSERT INTO `master_jenis_pekerjaan` (`id`, `jenis_pekerjaan`, `satuan`, `tgl_input`, `tgl_update`) VALUES
@@ -2366,7 +2407,7 @@ INSERT INTO `master_jenis_pekerjaan` (`id`, `jenis_pekerjaan`, `satuan`, `tgl_in
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_konsultan`
+-- Table structure for table `master_konsultan`
 --
 
 CREATE TABLE `master_konsultan` (
@@ -2380,7 +2421,7 @@ CREATE TABLE `master_konsultan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_konsultan`
+-- Dumping data for table `master_konsultan`
 --
 
 INSERT INTO `master_konsultan` (`id`, `nama`, `alamat`, `nama_direktur`, `se`, `ie`, `tgl_update`) VALUES
@@ -2393,7 +2434,7 @@ INSERT INTO `master_konsultan` (`id`, `nama`, `alamat`, `nama_direktur`, `se`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_laporan_harian`
+-- Table structure for table `master_laporan_harian`
 --
 
 CREATE TABLE `master_laporan_harian` (
@@ -2434,7 +2475,7 @@ CREATE TABLE `master_laporan_harian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_laporan_harian`
+-- Dumping data for table `master_laporan_harian`
 --
 
 INSERT INTO `master_laporan_harian` (`no_trans`, `real_date`, `user`, `kegiatan`, `unor`, `ruas_jalan`, `tanggal`, `segmen_jalan`, `status`, `ket`, `gambar`, `no_request`, `tgl_input`, `tgl_update`, `kontraktor`, `konsultan`, `ppk`, `gk1`, `gk2`, `gp1`, `nama_kontraktor`, `nama_ppk`, `nama_konsultan`, `aksi1`, `aksi2`, `aksi3`, `catatan_ppk`, `catatan_konsultan`, `tolak`, `foto_konsultan`, `foto_ppk`, `volume`, `satuan`, `nmp`) VALUES
@@ -2521,7 +2562,7 @@ INSERT INTO `master_laporan_harian` (`no_trans`, `real_date`, `user`, `kegiatan`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_penyedia_jasa`
+-- Table structure for table `master_penyedia_jasa`
 --
 
 CREATE TABLE `master_penyedia_jasa` (
@@ -2538,7 +2579,7 @@ CREATE TABLE `master_penyedia_jasa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_penyedia_jasa`
+-- Dumping data for table `master_penyedia_jasa`
 --
 
 INSERT INTO `master_penyedia_jasa` (`id`, `nama`, `alamat`, `nama_direktur`, `nama_gs`, `npwp`, `telp`, `bank`, `no_rek`, `tgl_update`) VALUES
@@ -2554,7 +2595,7 @@ INSERT INTO `master_penyedia_jasa` (`id`, `nama`, `alamat`, `nama_direktur`, `na
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master_ppk`
+-- Table structure for table `master_ppk`
 --
 
 CREATE TABLE `master_ppk` (
@@ -2565,7 +2606,7 @@ CREATE TABLE `master_ppk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master_ppk`
+-- Dumping data for table `master_ppk`
 --
 
 INSERT INTO `master_ppk` (`id`, `nama`, `alamat`, `tgl_update`) VALUES
@@ -2575,7 +2616,7 @@ INSERT INTO `master_ppk` (`id`, `nama`, `alamat`, `tgl_update`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `member`
+-- Table structure for table `member`
 --
 
 CREATE TABLE `member` (
@@ -2598,7 +2639,7 @@ CREATE TABLE `member` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `member`
+-- Dumping data for table `member`
 --
 
 INSERT INTO `member` (`id_member`, `nm_member`, `nama_lengkap`, `akses`, `jabatan`, `alamat_member`, `telp`, `email`, `gambar`, `nik`, `level`, `kantor_id`, `perusahaan`, `unit`, `tgl_input`, `tgl_update`) VALUES
@@ -2627,7 +2668,7 @@ INSERT INTO `member` (`id_member`, `nm_member`, `nama_lengkap`, `akses`, `jabata
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rencana_pekerjaan`
+-- Table structure for table `rencana_pekerjaan`
 --
 
 CREATE TABLE `rencana_pekerjaan` (
@@ -2639,7 +2680,7 @@ CREATE TABLE `rencana_pekerjaan` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `request`
+-- Table structure for table `request`
 --
 
 CREATE TABLE `request` (
@@ -2684,7 +2725,7 @@ CREATE TABLE `request` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `request`
+-- Dumping data for table `request`
 --
 
 INSERT INTO `request` (`id`, `user`, `nama_kegiatan`, `unor`, `id_jenis_pekerjaan`, `jenis_pekerjaan`, `diajukan_tgl`, `lokasi_sta`, `volume`, `satuan`, `pelaksanaan_tgl`, `catatan_surveyor`, `catatan_Inspector`, `catatan_technician`, `ci`, `qe`, `nama_kontraktor`, `nama_direksi`, `nama_ppk`, `kontraktor`, `status`, `konsultan`, `ppk`, `sketsa`, `foto_konsultan`, `app_konsultan`, `foto_ppk`, `note`, `tgl_input`, `tgl_update`, `gk1`, `gk2`, `gp1`, `aksi1`, `aksi2`, `aksi3`, `catatan_ppk`, `catatan_konsultan`) VALUES
@@ -2702,7 +2743,7 @@ INSERT INTO `request` (`id`, `user`, `nama_kegiatan`, `unor`, `id_jenis_pekerjaa
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ruas_jalan`
+-- Table structure for table `ruas_jalan`
 --
 
 CREATE TABLE `ruas_jalan` (
@@ -2715,7 +2756,7 @@ CREATE TABLE `ruas_jalan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ruas_jalan`
+-- Dumping data for table `ruas_jalan`
 --
 
 INSERT INTO `ruas_jalan` (`id`, `nama_ruas`, `sup`, `lokasi`, `panjang`, `uptd`) VALUES
@@ -3029,7 +3070,7 @@ INSERT INTO `ruas_jalan` (`id`, `nama_ruas`, `sup`, `lokasi`, `panjang`, `uptd`)
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `satuan`
+-- Table structure for table `satuan`
 --
 
 CREATE TABLE `satuan` (
@@ -3038,7 +3079,7 @@ CREATE TABLE `satuan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `satuan`
+-- Dumping data for table `satuan`
 --
 
 INSERT INTO `satuan` (`id`, `satuan`) VALUES
@@ -3054,7 +3095,7 @@ INSERT INTO `satuan` (`id`, `satuan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `uptd`
+-- Table structure for table `uptd`
 --
 
 CREATE TABLE `uptd` (
@@ -3068,7 +3109,7 @@ CREATE TABLE `uptd` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -3097,16 +3138,16 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `email`, `picture`, `nama_lengkap`, `alamat`, `telepon`, `nik`, `perusahaan`, `unit`, `activation_selector`, `activation_code`, `forgotten_password_selector`, `forgotten_password_code`, `forgotten_password_time`, `remember_selector`, `remember_code`, `created_on`, `last_login`, `active`) VALUES
-(1, '127.0.0.1', 'administrator', '$2y$12$0OEXFiN9ANwHVwaQNH5DjOccPf5zCXR8zZsihqZu.CM.ZIc4njS/a', 'admin@admin.com', 'default.png', 'administrator', 'Jl. Asia-Afrika', '098736454', '89374', 'PT. TUNA JAYA', 'DIREKTUR UTAMA', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1598708773, 1);
+(1, '127.0.0.1', 'administrator', '$2y$12$0OEXFiN9ANwHVwaQNH5DjOccPf5zCXR8zZsihqZu.CM.ZIc4njS/a', 'admin@admin.com', 'default.png', 'administrator', 'Jl. Asia-Afrika', '098736454', '89374', 'PT. TUNA JAYA', 'DIREKTUR UTAMA', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1598860210, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users_groups`
+-- Table structure for table `users_groups`
 --
 
 CREATE TABLE `users_groups` (
@@ -3116,7 +3157,7 @@ CREATE TABLE `users_groups` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `users_groups`
+-- Dumping data for table `users_groups`
 --
 
 INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
@@ -3128,116 +3169,122 @@ INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 --
 
 --
--- Indeks untuk tabel `data_umum`
+-- Indexes for table `data_umum`
 --
 ALTER TABLE `data_umum`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `detail_jadual`
+-- Indexes for table `detail_jadual`
 --
 ALTER TABLE `detail_jadual`
   ADD PRIMARY KEY (`id_jadual`),
   ADD KEY `id` (`id`);
 
 --
--- Indeks untuk tabel `detail_laporan_harian_pekerjaan`
+-- Indexes for table `detail_laporan_harian_pekerjaan`
 --
 ALTER TABLE `detail_laporan_harian_pekerjaan`
   ADD KEY `id_kegiatan` (`id_kegiatan`);
 
 --
--- Indeks untuk tabel `groups`
+-- Indexes for table `groups`
 --
 ALTER TABLE `groups`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jadual`
+-- Indexes for table `jadual`
 --
 ALTER TABLE `jadual`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kantor`
+-- Indexes for table `kantor`
 --
 ALTER TABLE `kantor`
   ADD PRIMARY KEY (`id_kantor`);
 
 --
--- Indeks untuk tabel `login_attempts`
+-- Indexes for table `landing_menu`
+--
+ALTER TABLE `landing_menu`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `login_attempts`
 --
 ALTER TABLE `login_attempts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `master_bahan`
+-- Indexes for table `master_bahan`
 --
 ALTER TABLE `master_bahan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `master_jenis_pekerjaan`
+-- Indexes for table `master_jenis_pekerjaan`
 --
 ALTER TABLE `master_jenis_pekerjaan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `master_konsultan`
+-- Indexes for table `master_konsultan`
 --
 ALTER TABLE `master_konsultan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `master_laporan_harian`
+-- Indexes for table `master_laporan_harian`
 --
 ALTER TABLE `master_laporan_harian`
   ADD PRIMARY KEY (`no_trans`);
 
 --
--- Indeks untuk tabel `master_penyedia_jasa`
+-- Indexes for table `master_penyedia_jasa`
 --
 ALTER TABLE `master_penyedia_jasa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `master_ppk`
+-- Indexes for table `master_ppk`
 --
 ALTER TABLE `master_ppk`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `member`
+-- Indexes for table `member`
 --
 ALTER TABLE `member`
   ADD PRIMARY KEY (`id_member`);
 
 --
--- Indeks untuk tabel `request`
+-- Indexes for table `request`
 --
 ALTER TABLE `request`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `ruas_jalan`
+-- Indexes for table `ruas_jalan`
 --
 ALTER TABLE `ruas_jalan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `satuan`
+-- Indexes for table `satuan`
 --
 ALTER TABLE `satuan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `uptd`
+-- Indexes for table `uptd`
 --
 ALTER TABLE `uptd`
   ADD PRIMARY KEY (`id_uptd`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -3247,7 +3294,7 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `uc_remember_selector` (`remember_selector`);
 
 --
--- Indeks untuk tabel `users_groups`
+-- Indexes for table `users_groups`
 --
 ALTER TABLE `users_groups`
   ADD PRIMARY KEY (`id`),
@@ -3256,123 +3303,129 @@ ALTER TABLE `users_groups`
   ADD KEY `fk_users_groups_groups1_idx` (`group_id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `data_umum`
+-- AUTO_INCREMENT for table `data_umum`
 --
 ALTER TABLE `data_umum`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT untuk tabel `detail_jadual`
+-- AUTO_INCREMENT for table `detail_jadual`
 --
 ALTER TABLE `detail_jadual`
   MODIFY `id_jadual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
--- AUTO_INCREMENT untuk tabel `groups`
+-- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `jadual`
+-- AUTO_INCREMENT for table `jadual`
 --
 ALTER TABLE `jadual`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT untuk tabel `kantor`
+-- AUTO_INCREMENT for table `kantor`
 --
 ALTER TABLE `kantor`
   MODIFY `id_kantor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `login_attempts`
+-- AUTO_INCREMENT for table `landing_menu`
 --
-ALTER TABLE `login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `landing_menu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `master_bahan`
+-- AUTO_INCREMENT for table `login_attempts`
+--
+ALTER TABLE `login_attempts`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `master_bahan`
 --
 ALTER TABLE `master_bahan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `master_konsultan`
+-- AUTO_INCREMENT for table `master_konsultan`
 --
 ALTER TABLE `master_konsultan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT untuk tabel `master_laporan_harian`
+-- AUTO_INCREMENT for table `master_laporan_harian`
 --
 ALTER TABLE `master_laporan_harian`
   MODIFY `no_trans` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
--- AUTO_INCREMENT untuk tabel `master_penyedia_jasa`
+-- AUTO_INCREMENT for table `master_penyedia_jasa`
 --
 ALTER TABLE `master_penyedia_jasa`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `master_ppk`
+-- AUTO_INCREMENT for table `master_ppk`
 --
 ALTER TABLE `master_ppk`
   MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `member`
+-- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
   MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT untuk tabel `request`
+-- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `satuan`
+-- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `uptd`
+-- AUTO_INCREMENT for table `uptd`
 --
 ALTER TABLE `uptd`
   MODIFY `id_uptd` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `users_groups`
+-- AUTO_INCREMENT for table `users_groups`
 --
 ALTER TABLE `users_groups`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `detail_laporan_harian_pekerjaan`
+-- Constraints for table `detail_laporan_harian_pekerjaan`
 --
 ALTER TABLE `detail_laporan_harian_pekerjaan`
   ADD CONSTRAINT `detail_laporan_harian_pekerjaan_ibfk_1` FOREIGN KEY (`id_kegiatan`) REFERENCES `detail_jadual` (`id_jadual`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `users_groups`
+-- Constraints for table `users_groups`
 --
 ALTER TABLE `users_groups`
   ADD CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
