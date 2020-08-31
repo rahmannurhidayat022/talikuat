@@ -16,29 +16,29 @@ class Organisasi extends CI_Controller {
 	{
 		$data['judul'] = 'Sekretariat Dinas';
 
-		$this->load->view('templates/header', $data);
-		$this->load->view('organisasi/V_sekretariat');
-		$this->load->view('templates/footer');
+		$this->load->view('landing/templates/header', $data);
+		$this->load->view('landing/organisasi/V_sekretariat');
+		$this->load->view('landing/templates/footer');
 	}
 
   public function bidang()
   {
     $data['judul'] = 'Bidang';
 
-    $this->load->view('templates/header', $data);
-    $this->load->view('organisasi/V_bidang');
-    $this->load->view('templates/footer');
+    $this->load->view('landing/templates/header', $data);
+    $this->load->view('landing/organisasi/V_bidang');
+    $this->load->view('landing/templates/footer');
   }
 
   public function uptd()
   {
     $data['judul'] = 'UPTD';
 
-    $this->load->view('templates/header', $data);
-    $this->load->view('organisasi/V_uptd');
-    $this->load->view('templates/footer');
+    $this->load->view('landing/templates/header', $data);
+    $this->load->view('landing/organisasi/V_uptd');
+    $this->load->view('landing/templates/footer');
   }
-	
+
 
 
 
