@@ -199,6 +199,8 @@
 		return false;
 	});
 
+	///baruuu
+
 	//hero carousel
 	$(document).ready(() => {
 		$(".box-slider").owlCarousel({
@@ -208,16 +210,15 @@
 			responsive: {
 				0: {
 					items: 1,
-					nav: true,
 				},
 				600: {
 					items: 3,
 					nav: false,
 				},
 				1000: {
-					items: 5,
-					nav: true,
-					loop: false,
+					items: 4,
+					nav: false,
+					loop: true,
 				},
 			},
 		});
