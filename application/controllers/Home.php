@@ -4,8 +4,8 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['judul'] = 'DBMPR';
-		$this->load->view('templates/header.php', $data);
-		$this->load->view('home/index');
-		$this->load->view('templates/footer.php');
+		$this->load->view('landing/templates/header.php', $data);
+		$this->load->view('landing/home/index');
+		$this->load->view('landing/templates/footer.php');
 	}
 }
