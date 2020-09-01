@@ -30,46 +30,24 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
       <!-- Vendor CSS Files -->
-      <link href="<?= base_url();?>/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="<?= base_url();?>/assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-      <link href="<?= base_url();?>/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-      <link href="<?= base_url();?>/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-      <link href="<?= base_url();?>/assets/vendor/venobox/venobox.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/vendor/venobox/venobox.css" rel="stylesheet" />
       <!-- animasi scrolling -->
       <link href="<?= base_url();?>/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
       <!-- konfigurasi map -->
       <link href="<?= base_url();?>/assets/vendor/aos/aos.css" rel="stylesheet" />
 
       <!-- Template Main CSS File -->
-      <link href="<?= base_url();?>/assets/css/style.css" rel="stylesheet" />
+      <link href="<?= base_url();?>assets/css/style.css" rel="stylesheet" />
 
       <!-- =======================================================
     * Template Name: Gp - v2.1.0
     * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/ -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?= base_url(); ?>assets/js/javascript.js"></script>
-    <script src="<?= base_url(); ?>assets/js/popper.min.js"></script>
-    <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
-    <!-- Vendor JS Files -->
-    <script src="<?= base_url();?>/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/php-email-form/validate.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/venobox/venobox.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/counterup/counterup.min.js"></script>
-    <script src="<?= base_url();?>/assets/vendor/aos/aos.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="<?= base_url();?>/assets/js/main.js"></script>
-
-
 
     <title><?= $judul; ?></title>
   </head>
@@ -79,7 +57,7 @@
 
         <h1 class="logo">
           <img src="<?= base_url();?>/assets/img/favicon.png" alt="logo dbmpr" class="img-fluid" />
-          <a style="color: white" href="<?= base_url();?>">Teman Jabar<span>.</span></a>
+          <a href="<?= base_url();?>">Teman Jabar<span>.</span></a>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
