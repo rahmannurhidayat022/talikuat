@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -79,6 +79,8 @@ $db['default'] = array(
 	'username' => 'root',
 	'password' => 'root',
 	'database' => '',
+	'password' => '',
+	'database' => 'talikuat',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

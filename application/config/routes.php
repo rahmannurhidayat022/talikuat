@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -49,6 +49,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'home';
+// Auth Route
+$route['login'] = 'auth/login';
+$route['logout'] = 'auth/logout';
+
+// Home Route
+$route['home'] = 'dashboard';
+
+// Data Umum
+$route['kontraktor'] = 'Kontraktor';
+$route['konsultan'] = 'Konsultan';
+$route['ppk'] = 'PPK';
+$route['jenis'] = 'JenisPekerjaan';
+$route['pengguna'] = 'Pengguna';
+
+// Input Data
+$route['data_umum'] = 'DataUmum';
+$route['form_data_umum'] = 'DataUmum/formdata';
+$route['jadwal'] = 'Jadwal';
+$route['permintaan'] = 'Permintaan';
+$route['laporan_harian'] = 'LaporanHarian';
+
+// Laporan Pekerjaan
+$route['laporan_pekerjaan'] = 'LaporanPekerjaan';
+
+// Pusat Unduhan
+$route['data_kontrak'] = 'DataKontrak';
+
+// Cetak Laporan
+$route['progress'] = 'Progress';
+
+// Pengaturan
+$route['user'] = 'user';
+
+// Default Routes
+$route['default_controller'] = 'Auth';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
