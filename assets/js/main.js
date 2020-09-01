@@ -7,6 +7,52 @@
 !(function ($) {
 	"use strict";
 
+	//jika width window lebih besar dari 990 && < 1200 maka hilangkan .logo
+	$(window).resize(function () {
+		let wd = $(window).width();
+
+		if (wd > 990 && wd < 1200) {
+			$("#header .logo").css("display", "none");
+		} else {
+			$("#header .logo").css("display", "block");
+		}
+	});
+
+	//arrow down
+	const AllIdElmn = [
+		"about",
+		"clients",
+		"features",
+		"services",
+		"cta",
+		"portfolio",
+		"counts",
+		"testimonials",
+		"team",
+		"contact",
+	];
+	console.log(AllIdElmn[0]);
+	$(window).scroll(function () {
+		let Y = this.scrollY;
+		console.log(Y);
+		if (Y < 100) {
+			$(".back-to-down").attr("href", `#${AllIdElmn[0]}`);
+		}
+
+		if (Y > 100 && Y < 810) {
+			$(".back-to-down").attr("href", `#${AllIdElmn[1]}`);
+		}
+
+		if (Y > 810 && Y < 1340) {
+			$(".back-to-down").attr("href", `#${AllIdElmn[3]}`);
+		}
+
+		if (Y > 1340 && Y < 2287) {
+			console.log("MASUKKK");
+			$(".back-to-down").attr("href", `#${AllIdElmn[4]}`);
+		}
+	});
+
 	// Preloader
 	$(window).on("load", function () {
 		if ($("#preloader").length) {
@@ -179,25 +225,25 @@
 		return false;
 	});
 
-	// Back to down button
-	$(window).scroll(function () {
-		if ($(this).scrollTop() < 2500) {
-			$(".back-to-down").fadeIn("slow");
-		} else {
-			$(".back-to-down").fadeOut("slow");
-		}
-	});
+	// // Back to down button
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() < 2500) {
+	// 		$(".back-to-down").fadeIn("slow");
+	// 	} else {
+	// 		$(".back-to-down").fadeOut("slow");
+	// 	}
+	// });
 
-	$(".back-to-down").click(function () {
-		$("html, body").animate(
-			{
-				scrollTop: 9999,
-			},
-			1500,
-			"easeInOutExpo"
-		);
-		return false;
-	});
+	// $(".back-to-down").click(function () {
+	// 	$("html, body").animate(
+	// 		{
+	// 			scrollTop: 9999,
+	// 		},
+	// 		1500,
+	// 		"easeInOutExpo"
+	// 	);
+	// 	return false;
+	// });
 
 	//hero carousel
 	$(document).ready(() => {
